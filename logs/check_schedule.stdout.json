@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "tests": {
+    "empty": {
+      "p": "0",
+      "C": "0",
+      "K": "0",
+      "cases": 81
+    },
+    "deterministic_baseline": {
+      "p": "1",
+      "C": "1",
+      "K": "1",
+      "cases": 81
+    },
+    "bursty": {
+      "p": "1/2",
+      "C": "3/2",
+      "K": "3/2",
+      "cases": 81
+    },
+    "single_uniform_n3": {
+      "p": "1",
+      "C": "2/3",
+      "K": "1",
+      "cases": 729
+    },
+    "two_opposing_bursts": {
+      "p": "1",
+      "C": "3",
+      "K": "3",
+      "cases": 81
+    },
+    "p_term_witness": {
+      "D": "999999/1000000",
+      "H": "99/100",
+      "H_over_D": "10000/10101",
+      "C_only": "2/3"
+    }
+  }
+}

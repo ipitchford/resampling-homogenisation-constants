@@ -1,0 +1,361 @@
+{
+  "scope": "Bounded random-restart search over arbitrary finite experiments; evidence, not proof.",
+  "configs": [
+    {
+      "mode": "labelled",
+      "n": 2,
+      "alphabet": 2,
+      "restarts": 40,
+      "seed": 20261115,
+      "best_ratio_found": 1.50000019,
+      "D_at_best": 0.0,
+      "C_n_reference": 1.5,
+      "P_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "mode": "labelled",
+      "n": 2,
+      "alphabet": 3,
+      "restarts": 40,
+      "seed": 20261116,
+      "best_ratio_found": 1.50000002,
+      "D_at_best": 0.0,
+      "C_n_reference": 1.5,
+      "P_at_best": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "mode": "labelled",
+      "n": 3,
+      "alphabet": 2,
+      "restarts": 40,
+      "seed": 20261117,
+      "best_ratio_found": 1.55555557,
+      "D_at_best": 0.0,
+      "C_n_reference": 1.55555556,
+      "P_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "mode": "labelled",
+      "n": 3,
+      "alphabet": 3,
+      "restarts": 40,
+      "seed": 20261118,
+      "best_ratio_found": 1.55555554,
+      "D_at_best": 2e-08,
+      "C_n_reference": 1.55555556,
+      "P_at_best": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "mode": "labelled",
+      "n": 3,
+      "alphabet": 4,
+      "restarts": 40,
+      "seed": 20261119,
+      "best_ratio_found": 1.55554675,
+      "D_at_best": 1.318e-05,
+      "C_n_reference": 1.55555556,
+      "P_at_best": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.99742,
+          0.00257,
+          1e-05
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          1e-05,
+          0.0,
+          0.99999
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.99743,
+          0.00257,
+          0.0
+        ]
+      ]
+    },
+    {
+      "mode": "labelled",
+      "n": 4,
+      "alphabet": 2,
+      "restarts": 40,
+      "seed": 20261120,
+      "best_ratio_found": 1.54687502,
+      "D_at_best": 0.0,
+      "C_n_reference": 1.546875,
+      "P_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "mode": "shared",
+      "n": 2,
+      "alphabet": 2,
+      "restarts": 40,
+      "seed": 20261121,
+      "best_ratio_found": 1.12495146,
+      "D_at_best": 0.00025883,
+      "C_n_reference": null,
+      "P_at_best": [
+        [
+          0.50002,
+          0.49998
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.50015,
+          0.49985
+        ],
+        [
+          0.00026,
+          0.99974
+        ]
+      ]
+    },
+    {
+      "mode": "shared",
+      "n": 3,
+      "alphabet": 2,
+      "restarts": 40,
+      "seed": 20261122,
+      "best_ratio_found": 1.07220078,
+      "D_at_best": 0.02929861,
+      "C_n_reference": null,
+      "P_at_best": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.78674,
+          0.21326
+        ],
+        [
+          0.83444,
+          0.16556
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.97235,
+          0.02765
+        ],
+        [
+          0.77898,
+          0.22102
+        ],
+        [
+          0.82804,
+          0.17196
+        ]
+      ]
+    },
+    {
+      "mode": "shared",
+      "n": 3,
+      "alphabet": 3,
+      "restarts": 40,
+      "seed": 20261123,
+      "best_ratio_found": 1.43638749,
+      "D_at_best": 0.00785888,
+      "C_n_reference": null,
+      "P_at_best": [
+        [
+          2e-05,
+          0.0,
+          0.99998
+        ],
+        [
+          0.99216,
+          0.00784,
+          0.0
+        ],
+        [
+          1e-05,
+          0.0,
+          0.99999
+        ]
+      ],
+      "Q_at_best": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.00787,
+          0.0,
+          0.99213
+        ]
+      ]
+    }
+  ],
+  "elapsed_seconds": 151.2,
+  "status": "No labelled ratio above C_n was found"
+}

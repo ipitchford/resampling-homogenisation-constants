@@ -1,0 +1,261 @@
+{
+  "status": "passed",
+  "scope": "Finite lattice, four exact symbolic identities, and finite quadrature checks; no proof-assistant verification.",
+  "lattice": {
+    "sum_ranges": [
+      1,
+      8
+    ],
+    "base_common_mass": "1/2",
+    "pairs_checked": 4916,
+    "strict_boundary_transfers": 4188
+  },
+  "symbolic_identities": [
+    "sextic derivative equation",
+    "quartic derivative equation",
+    "coupled-constraint derivative identity",
+    "threshold cubic remainder -1 modulo quadratic"
+  ],
+  "Poisson_kernel_checks": [
+    {
+      "n": 3,
+      "D": "1/20",
+      "absolute_error": 1.5432100042289676e-14,
+      "quadrature_error_estimate": 1.615211908673152e-11
+    },
+    {
+      "n": 3,
+      "D": "1/2",
+      "absolute_error": 1.6653345369377348e-16,
+      "quadrature_error_estimate": 3.351725799989529e-10
+    },
+    {
+      "n": 3,
+      "D": "19/20",
+      "absolute_error": 2.0816681711721685e-17,
+      "quadrature_error_estimate": 1.1534497315612846e-11
+    },
+    {
+      "n": 3,
+      "D": "1",
+      "absolute_error": 1.3877787807814457e-17,
+      "quadrature_error_estimate": 4.111937128241322e-16
+    },
+    {
+      "n": 4,
+      "D": "1/20",
+      "absolute_error": 1.532107773982716e-14,
+      "quadrature_error_estimate": 1.6153839952642602e-11
+    },
+    {
+      "n": 4,
+      "D": "1/2",
+      "absolute_error": 1.1102230246251565e-16,
+      "quadrature_error_estimate": 3.3948565179502897e-10
+    },
+    {
+      "n": 4,
+      "D": "19/20",
+      "absolute_error": 2.7755575615628914e-17,
+      "quadrature_error_estimate": 1.1505267658723506e-11
+    },
+    {
+      "n": 4,
+      "D": "1",
+      "absolute_error": 0.0,
+      "quadrature_error_estimate": 6.938893903907228e-16
+    },
+    {
+      "n": 5,
+      "D": "1/20",
+      "absolute_error": 1.532107773982716e-14,
+      "quadrature_error_estimate": 1.61544768034696e-11
+    },
+    {
+      "n": 5,
+      "D": "1/2",
+      "absolute_error": 1.6653345369377348e-16,
+      "quadrature_error_estimate": 3.4196319266875005e-10
+    },
+    {
+      "n": 5,
+      "D": "19/20",
+      "absolute_error": 1.3877787807814457e-17,
+      "quadrature_error_estimate": 1.158079578414406e-11
+    },
+    {
+      "n": 5,
+      "D": "1",
+      "absolute_error": 1.3877787807814457e-17,
+      "quadrature_error_estimate": 8.633094239485215e-16
+    },
+    {
+      "n": 6,
+      "D": "1/20",
+      "absolute_error": 1.509903313490213e-14,
+      "quadrature_error_estimate": 1.6154687395342044e-11
+    },
+    {
+      "n": 6,
+      "D": "1/2",
+      "absolute_error": 2.7755575615628914e-16,
+      "quadrature_error_estimate": 3.435721625442483e-10
+    },
+    {
+      "n": 6,
+      "D": "19/20",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 1.1651086345709771e-11
+    },
+    {
+      "n": 6,
+      "D": "1",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 9.746813933609062e-16
+    },
+    {
+      "n": 7,
+      "D": "1/20",
+      "absolute_error": 1.4988010832439613e-14,
+      "quadrature_error_estimate": 1.615682421658127e-11
+    },
+    {
+      "n": 7,
+      "D": "1/2",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 3.4470132978727e-10
+    },
+    {
+      "n": 7,
+      "D": "19/20",
+      "absolute_error": 4.163336342344337e-17,
+      "quadrature_error_estimate": 1.1707617948025772e-11
+    },
+    {
+      "n": 7,
+      "D": "1",
+      "absolute_error": 1.3877787807814457e-17,
+      "quadrature_error_estimate": 1.0532075896321185e-15
+    },
+    {
+      "n": 8,
+      "D": "1/20",
+      "absolute_error": 1.532107773982716e-14,
+      "quadrature_error_estimate": 1.615651832587896e-11
+    },
+    {
+      "n": 8,
+      "D": "1/2",
+      "absolute_error": 1.6653345369377348e-16,
+      "quadrature_error_estimate": 3.455374491347038e-10
+    },
+    {
+      "n": 8,
+      "D": "19/20",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 1.1752610603460445e-11
+    },
+    {
+      "n": 8,
+      "D": "1",
+      "absolute_error": 0.0,
+      "quadrature_error_estimate": 1.111476633387093e-15
+    },
+    {
+      "n": 9,
+      "D": "1/20",
+      "absolute_error": 1.554312234475219e-14,
+      "quadrature_error_estimate": 1.6157201692684928e-11
+    },
+    {
+      "n": 9,
+      "D": "1/2",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 3.4618158916386804e-10
+    },
+    {
+      "n": 9,
+      "D": "19/20",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 1.1788855048405766e-11
+    },
+    {
+      "n": 9,
+      "D": "1",
+      "absolute_error": 0.0,
+      "quadrature_error_estimate": 1.156405117698225e-15
+    },
+    {
+      "n": 10,
+      "D": "1/20",
+      "absolute_error": 1.5210055437364645e-14,
+      "quadrature_error_estimate": 1.6156953028693207e-11
+    },
+    {
+      "n": 10,
+      "D": "1/2",
+      "absolute_error": 2.220446049250313e-16,
+      "quadrature_error_estimate": 3.46693103442305e-10
+    },
+    {
+      "n": 10,
+      "D": "19/20",
+      "absolute_error": 2.7755575615628914e-17,
+      "quadrature_error_estimate": 1.1818533131313647e-11
+    },
+    {
+      "n": 10,
+      "D": "1",
+      "absolute_error": 5.551115123125783e-17,
+      "quadrature_error_estimate": 1.1920928955078131e-15
+    },
+    {
+      "n": 11,
+      "D": "1/20",
+      "absolute_error": 1.532107773982716e-14,
+      "quadrature_error_estimate": 1.6156216475523812e-11
+    },
+    {
+      "n": 11,
+      "D": "1/2",
+      "absolute_error": 1.6653345369377348e-16,
+      "quadrature_error_estimate": 3.471090896676702e-10
+    },
+    {
+      "n": 11,
+      "D": "19/20",
+      "absolute_error": 8.326672684688674e-17,
+      "quadrature_error_estimate": 1.1843206103312465e-11
+    },
+    {
+      "n": 11,
+      "D": "1",
+      "absolute_error": 8.326672684688674e-17,
+      "quadrature_error_estimate": 1.221119866580847e-15
+    },
+    {
+      "n": 12,
+      "D": "1/20",
+      "absolute_error": 1.4876988529977098e-14,
+      "quadrature_error_estimate": 1.6156572020038642e-11
+    },
+    {
+      "n": 12,
+      "D": "1/2",
+      "absolute_error": 0.0,
+      "quadrature_error_estimate": 3.4745414130394426e-10
+    },
+    {
+      "n": 12,
+      "D": "19/20",
+      "absolute_error": 2.7755575615628914e-17,
+      "quadrature_error_estimate": 1.1864018881896365e-11
+    },
+    {
+      "n": 12,
+      "D": "1",
+      "absolute_error": 8.326672684688674e-17,
+      "quadrature_error_estimate": 1.2451890050681499e-15
+    }
+  ]
+}

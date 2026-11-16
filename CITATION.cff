@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "Resampling heterogeneous experiments: sharp amplification constants and high-signal error asymptotics"
+abstract: "Unrefereed research candidate. A test between two hypotheses can use n different independent experiments once each, or n draws chosen uniformly at random with replacement (resampling, or homogenisation). Kontorovich proved that the fixed design is never more than a constant factor less informative: D >= cH with c > 0.1489, where D and H are the total-variation distances under the two designs; the best published upper bound was c <= 8/9. This work shows c <= 9/14 for experiments on general outcome spaces (n = 2 already gives 2/3), so 8/9 is not the general optimum; the Bernoulli conjecture is not addressed. For erasure experiments it finds the exact worst-case amplification for every data-independent resampling schedule, max{P(N != 0), max E max(N_i, N_j)}; for uniform resampling this is largest at three experiments, 14/9, and decreases to about 1.524. It solves the case n = 2 for arbitrary experiments, gives the exact bound when only two experiments differ and the exact optimum for three erasure experiments, and shows that with kn draws the overlap 1 - H is at least q(1 - D)^k, attained to leading order as D -> 1, where q is the probability that every experiment is used exactly k times (n!/n^n for k = 1). The conjecture c = 9/14 is supported by a numerical search, not proved."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-16"
+doi: "10.5281/zenodo.24267748"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24267748"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24267747"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/resampling-homogenisation-constants"
+url: "https://evidencepress.org/releases/resampling-homogenisation-constants/"
+license: CC0-1.0
+keywords:
+  - total variation
+  - homogenisation
+  - resampling
+  - bootstrap
+  - comparison of experiments
+  - privacy amplification by subsampling
+preferred-citation:
+  type: article
+  title: "Resampling heterogeneous experiments: sharp amplification constants and high-signal error asymptotics"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24267748"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

@@ -1,0 +1,20 @@
+Software with which the recorded logs and figure were reproduced before this release was frozen (16 November 2026)
+
+  Platform    macOS 27.2, arm64 (Apple silicon)
+  Python      CPython 3.12.11 (via uv; checked inside the environment), run with -I (isolated) and -B;
+              numpy 2.3.5, scipy 1.17.0, sympy 1.14.0, mpmath 1.3.0, matplotlib 3.10.8
+              all scripts except make_figures.py and search_unrestricted.py also under -O
+  pdfTeX      TeX Live 2026; manuscript.pdf from manuscript.tex (figure read from figures/), three pdflatex passes
+  GitHub CI   CPython 3.12 on ubuntu-latest with the pinned requirements
+
+Commands (from the package root of a copy; the scripts write into logs/ and figures/):
+
+  UV="uv run --no-project --python 3.12 --with numpy==2.3.5 --with scipy==1.17.0 --with sympy==1.14.0 --with mpmath==1.3.0 --with matplotlib==3.10.8"
+  $UV python -I -B -O code/verify.py                        # about 2 s; likewise the other check scripts
+  $UV python -I -B code/make_figures.py
+  $UV python -I -B code/search_unrestricted.py              # about 2.5 minutes
+
+Fields that legitimately vary between runs: "elapsed_seconds" (wall clock) in verification.json and
+search_unrestricted.json; "python" and library versions in verification.json on other interpreters; the last digit of
+the scipy-optimised BAEC3 float at D = 0.4 across platforms; creation timestamps and random marker ids inside the PDF
+and SVG figure files.

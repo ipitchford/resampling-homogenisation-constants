@@ -1,0 +1,227 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 16 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (15 November 2026), the corpus overlap check, the reference records in refs.bib (Crossref records and arXiv abstract pages retrieved 16 November 2026), REVIEW_SUMMARY.md and the paper's own positioning (Sections 1.2 and 1.4). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Theorem 4.1 / Proposition 4.2: c* <= 9/14 for arbitrary experiments (n = 2 gives 2/3; every n >= 3 gives c* <= 1/C_n < 0.6563)",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.1; Section 4.1; Proposition 4.2",
+   "searches": [
+    {
+     "date": "2026-11-15",
+     "corpus": "Evidence Press release corpus (site papers/); arXiv listing and full texts of Kontorovich's homogenisation papers; arXiv and web searches; Crossref; by the internal reviewers and the second-model adversarial review",
+     "query": "TV homogenization constant; homogenisation inequality total variation 9/14 or 14/9; resampling heterogeneous experiments total variation; multinomial resampling bootstrap comparison of experiments; privacy amplification by subsampling with replacement; sampling with versus without replacement total variation n!/n^n; erasure / Z-channel dichotomies"
+    },
+    {
+     "date": "2026-11-15",
+     "corpus": "as above, re-run during the revision round for the extensions",
+     "query": "E max of two multinomial counts; Poisson limit Bessel I0 I1 max of two Poisson; two differing coordinates total variation modulus; Le Cam deficiency of resampling; high-signal Bayes error resampling"
+    }
+   ],
+   "closestPriorWork": "Kontorovich arXiv:2604.03882v1 p. 1 (c > 0.1489; c <= 8/9 'a fortiori in general'); arXiv:2601.04079v3 (Bernoulli example and conjecture 8/9)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "improves the published general upper bound; no earlier 9/14 or 14/9 statement found; the Bernoulli conjecture is not addressed"
+  },
+  {
+   "claim": "Theorem 3.1: exact schedule constant max{P(N != 0), max_{i,j} E max(N_i, N_j)} for erasure experiments under any revealed data-independent schedule",
+   "unit": "statement",
+   "paperLocation": "Theorem 3.1; Section 3.1",
+   "searches": [
+    {
+     "date": "2026-11-15",
+     "corpus": "Evidence Press release corpus (site papers/); arXiv listing and full texts of Kontorovich's homogenisation papers; arXiv and web searches; Crossref; by the internal reviewers and the second-model adversarial review",
+     "query": "TV homogenization constant; homogenisation inequality total variation 9/14 or 14/9; resampling heterogeneous experiments total variation; multinomial resampling bootstrap comparison of experiments; privacy amplification by subsampling with replacement; sampling with versus without replacement total variation n!/n^n; erasure / Z-channel dichotomies"
+    }
+   ],
+   "closestPriorWork": "Balle-Barthe-Gaboardi arXiv:1807.01647v2 Theorem 10 (one differing record, via group privacy; at eps = 0 a total-variation statement)",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "the two-coordinate E max(N_i, N_j) form not found; the one-coordinate counterpart is credited"
+  },
+  {
+   "claim": "Theorem 5.1 / Corollary 5.2 / Theorem 6.1: exact bound for two differing coordinates at every distance; n = 2 solved for arbitrary experiments (sup H = 3D/2 - D^2/2); exact three-component erasure optimum",
+   "unit": "statement",
+   "paperLocation": "Theorem 5.1; Corollary 5.2; Remark 5.3; Theorem 6.1; Corollary 6.2",
+   "searches": [
+    {
+     "date": "2026-11-15",
+     "corpus": "Evidence Press release corpus (site papers/); arXiv listing and full texts of Kontorovich's homogenisation papers; arXiv and web searches; Crossref; by the internal reviewers and the second-model adversarial review",
+     "query": "TV homogenization constant; homogenisation inequality total variation 9/14 or 14/9; resampling heterogeneous experiments total variation; multinomial resampling bootstrap comparison of experiments; privacy amplification by subsampling with replacement; sampling with versus without replacement total variation n!/n^n; erasure / Z-channel dichotomies"
+    },
+    {
+     "date": "2026-11-15",
+     "corpus": "as above, re-run during the revision round for the extensions",
+     "query": "E max of two multinomial counts; Poisson limit Bessel I0 I1 max of two Poisson; two differing coordinates total variation modulus; Le Cam deficiency of resampling; high-signal Bayes error resampling"
+    }
+   ],
+   "closestPriorWork": "Kontorovich arXiv:2610.31164v1 Section 7.3 (linear bound H <= 3D/2 for n = 2, stated for likelihood-ratio convolutions)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the linear n = 2 bound is credited; the exact quadratic modulus, its attainment at every distance and the three-component optimum were not found"
+  },
+  {
+   "claim": "Theorem 7.1 / Corollary 7.3: for any data-independent schedule with kn draws 1 - H >= q(1 - D)^k, attained to leading order as D -> 1; uniform k = 1 ratio n!/n^n",
+   "unit": "statement",
+   "paperLocation": "Theorem 7.1; Remark 7.2; Corollary 7.3",
+   "searches": [
+    {
+     "date": "2026-11-15",
+     "corpus": "Evidence Press release corpus (site papers/); arXiv listing and full texts of Kontorovich's homogenisation papers; arXiv and web searches; Crossref; by the internal reviewers and the second-model adversarial review",
+     "query": "TV homogenization constant; homogenisation inequality total variation 9/14 or 14/9; resampling heterogeneous experiments total variation; multinomial resampling bootstrap comparison of experiments; privacy amplification by subsampling with replacement; sampling with versus without replacement total variation n!/n^n; erasure / Z-channel dichotomies"
+    },
+    {
+     "date": "2026-11-15",
+     "corpus": "as above, re-run during the revision round for the extensions",
+     "query": "E max of two multinomial counts; Poisson limit Bessel I0 I1 max of two Poisson; two differing coordinates total variation modulus; Le Cam deficiency of resampling; high-signal Bayes error resampling"
+    }
+   ],
+   "closestPriorWork": "Darroch-Jirina-Speed 1988 p. 198 eq. (1) (n!/n^n as the no-collision probability; TV between sampling with and without replacement)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the coefficient is classical and credited; its simultaneous attainment over all count patterns is not found in the bounded search"
+  },
+  {
+   "claim": "Method: Kontorovich's labelled lift (record which experiment produced each observation, then forget labels), with erasure overlaps written as products over counts so that the logarithmic budgets range over a product of simplices and the worst case concentrates each budget on one coordinate; for high signal, a base-(k+1) radix weighting that separates the balanced count vector from all others",
+   "unit": "method",
+   "paperLocation": "Section 2 (labelled lift); proof of Theorem 3.1; proof of Theorem 7.1 and Remark 7.2",
+   "searches": [
+    {
+     "date": "2026-11-15",
+     "corpus": "Evidence Press release corpus (site papers/); arXiv listing and full texts of Kontorovich's homogenisation papers; arXiv and web searches; Crossref; by the internal reviewers and the second-model adversarial review",
+     "query": "TV homogenization constant; homogenisation inequality total variation 9/14 or 14/9; resampling heterogeneous experiments total variation; multinomial resampling bootstrap comparison of experiments; privacy amplification by subsampling with replacement; sampling with versus without replacement total variation n!/n^n; erasure / Z-channel dichotomies"
+    },
+    {
+     "date": "2026-11-15",
+     "corpus": "as above, re-run during the revision round for the extensions",
+     "query": "E max of two multinomial counts; Poisson limit Bessel I0 I1 max of two Poisson; two differing coordinates total variation modulus; Le Cam deficiency of resampling; high-signal Bayes error resampling"
+    }
+   ],
+   "closestPriorWork": "Labelled lift: Kontorovich arXiv:2604.03882v1 Theorem 3 and proof of Theorem 4, arXiv:2610.31164v1 Proposition 5.3; tensorisation facts: Kontorovich ECP 30 (2025); the extreme-point reduction is standard convexity",
+   "verdict": "known-cited",
+   "verdictNote": "the labelled lift is credited to Kontorovich and convexity arguments are standard; novelty is claimed only for the sharp constants, the radix construction and the attainment statements"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Kontorovich, A. (2026), TV homogenization inequalities, arXiv:2601.04079v3",
+   "usedFor": "Bernoulli homogenisation, the 8/9 example and the Bernoulli conjecture",
+   "readWhat": "whole paper",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://arxiv.org/abs/2601.04079v3"
+  },
+  {
+   "citation": "Kontorovich, A. (2026), A homogenization principle for total variation, arXiv:2604.03882v1",
+   "usedFor": "c > 0.1489 for arbitrary measures; labelled lift; status of 8/9",
+   "readWhat": "whole paper",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://arxiv.org/abs/2604.03882v1"
+  },
+  {
+   "citation": "Kontorovich, A. (2026), A local-to-global principle for f-divergence homogenization, arXiv:2610.31164v1",
+   "usedFor": "Section 7.3 (n = 2 linear bound); Proposition 5.3; Bayes-error identity (1.2)",
+   "readWhat": "whole paper",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://arxiv.org/abs/2610.31164v1"
+  },
+  {
+   "citation": "Kontorovich, A. (2025), On the tensorization of the variational distance, Electronic Communications in Probability 30, 1-10",
+   "usedFor": "tensorisation facts for total variation",
+   "readWhat": "whole paper (arXiv:2409.10368v2)",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://doi.org/10.1214/25-ECP680"
+  },
+  {
+   "citation": "Darroch, J. N., Jirina, M. and Speed, T. P. (1988), Sampling without replacement: approximation to the probability distribution, Journal of the Australian Mathematical Society Series A 44(2), 197-213",
+   "usedFor": "the coefficient n!/n^n and TV between sampling with and without replacement",
+   "readWhat": "whole paper",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://doi.org/10.1017/S1446788700029785"
+  },
+  {
+   "citation": "Balle, B., Barthe, G. and Gaboardi, M. (2018), Privacy amplification by subsampling: tight analyses via couplings and divergences, arXiv:1807.01647v2",
+   "usedFor": "Theorem 10 (multinomial subsampling, one differing record) and its proof",
+   "readWhat": "Theorem 10 and its proof, with the definitions it uses",
+   "date": "2026-11-15",
+   "evidenceLocator": "https://arxiv.org/abs/1807.01647v2"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Whether 9/14 is the exact general constant",
+   "closingQuestion": "Is TV(Pbar^n, Qbar^n) <= (14/9) TV(prod P_i, prod Q_i) for all experiments?",
+   "triedOrSearched": "fixed-seed search over arbitrary finite experiments (labelled n <= 4, alphabets <= 4; shared binary and ternary): nothing above C_n; Remark 4.3 shows a labelled-route proof must be sharp at 14/9",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Conjecture 8.1; open problem 1",
+   "whyNotClosedNow": "stated in Section 8.2"
+  },
+  {
+   "limitation": "Erasure-class constants are not known to bound general experiments",
+   "closingQuestion": "Can general experiments be reduced to erasure experiments?",
+   "triedOrSearched": "Section 8.3 shows garbling and common-part refinement both fail; Bernoulli example 87/400 checked",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 8.3",
+   "whyNotClosedNow": "stated in the paper"
+  },
+  {
+   "limitation": "Bernoulli constant (conjecturally 8/9) not addressed",
+   "closingQuestion": "What is the best constant on a common two-point space?",
+   "triedOrSearched": "shared-binary search best 1.124951 at n = 2, close to 9/8",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "open problem 2",
+   "whyNotClosedNow": "outside the scope of the paper"
+  },
+  {
+   "limitation": "High-signal limit can be approached slowly; budgets not a multiple of n; adaptive schedules; hockey-stick versions",
+   "closingQuestion": "Next-order terms and extensions",
+   "triedOrSearched": "next-order coefficient for three erasure components computed (0.1403); explicit remainder in Theorem 7.1",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "open problems 4 and 5",
+   "whyNotClosedNow": "stated in Section 8.4"
+  },
+  {
+   "limitation": "Computational checks could be vacuous under optimisation or share an error with the text",
+   "closingQuestion": "Do the checks fail when a constant is wrong?",
+   "triedOrSearched": "assert replaced by CheckFailure; negative controls (87/400 -> 88/400; doubled sandwich lower bound) exit 1 under -O",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Priority rests on a bounded search",
+   "closingQuestion": "Would indexed databases change attribution?",
+   "triedOrSearched": "arXiv, web and Crossref searches; Kontorovich's papers and their references; privacy-amplification and sampling literature; Evidence Press corpus",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "MathSciNet and zbMATH not used",
+   "whyNotClosedNow": "recorded here and in the AI-use statement"
+  }
+ ],
+ "extensionScout": {
+  "by": "five internal reviewer agents and an adversarial review by a second AI model",
+  "date": "2026-11-15",
+  "proposals": [
+   "exact n = 2 problem for arbitrary experiments",
+   "large-n limit of C_n",
+   "sharper high-signal construction",
+   "evidence for c* = 9/14",
+   "proof of c* = 9/14",
+   "four-component erasure optimum"
+  ],
+  "actions": [
+   "done: Corollary 5.2",
+   "done: Proposition 4.2",
+   "done: radix B >= k + 1, Theorem 7.1 and Remark 7.2",
+   "done as evidence: Conjecture 8.1 with search",
+   "not achieved; open problem 1",
+   "not attempted; open problem 3"
+  ]
+ }
+}

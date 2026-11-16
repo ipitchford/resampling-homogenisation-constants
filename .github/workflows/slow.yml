@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: MIT
+# Non-blocking: the figure, the normal-mode checks and the 2.5-minute numerical search, off the critical path.
+name: Figure, normal-mode checks and search (non-blocking)
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  slow:
+    name: Normal-mode checks, Figure 1 and the conjecture search
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned requirements
+        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Run in a copy
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          pkg="$RUNNER_TEMP/pkg"; mkdir -p "$pkg/logs" "$pkg/figures"; cp -R code "$pkg/code"; cd "$pkg"
+          for s in verify check_boundary check_schedule check_two_active check_n3_reduction verify_unrestricted_asymptotic check_extensions make_figures search_unrestricted; do python3 -I -B "code/$s.py" > "$RUNNER_TEMP/$s.out"; done
+          tail -n 4 "$RUNNER_TEMP/search_unrestricted.out"; ls -l figures logs

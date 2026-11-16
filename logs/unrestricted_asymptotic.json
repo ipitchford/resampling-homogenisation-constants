@@ -1,0 +1,297 @@
+{
+  "scope": "Exact rational checks of finite constructions; no proof-assistant verification.",
+  "cases": [
+    {
+      "n": 1,
+      "k": 2,
+      "radix": 3,
+      "weights": [
+        1
+      ],
+      "S": 1,
+      "r": "1/2",
+      "epsilon": "1",
+      "delta": "2",
+      "alpha_mass_exponents": [
+        1
+      ],
+      "beta_mass_exponents": [
+        1
+      ],
+      "count_vectors_checked": 1,
+      "balanced_weight": "1",
+      "minimum_nonbalanced_exponent_gap": null,
+      "overlap_direct": "1/4",
+      "lower_bound": "1/4",
+      "upper_bound": "1/4",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 2,
+      "k": 1,
+      "radix": 3,
+      "weights": [
+        1,
+        3
+      ],
+      "S": 4,
+      "r": "1/65536",
+      "epsilon": "1/8",
+      "delta": "1/4",
+      "alpha_mass_exponents": [
+        6,
+        10
+      ],
+      "beta_mass_exponents": [
+        10,
+        6
+      ],
+      "count_vectors_checked": 3,
+      "balanced_weight": "1/2",
+      "minimum_nonbalanced_exponent_gap": 4,
+      "overlap_direct": "17/2097152",
+      "lower_bound": "1/131072",
+      "upper_bound": "17/2097152",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "radix": 5,
+      "weights": [
+        1,
+        5
+      ],
+      "S": 6,
+      "r": "1/16777216",
+      "epsilon": "1/12",
+      "delta": "1/3",
+      "alpha_mass_exponents": [
+        8,
+        16
+      ],
+      "beta_mass_exponents": [
+        16,
+        8
+      ],
+      "count_vectors_checked": 5,
+      "balanced_weight": "3/8",
+      "minimum_nonbalanced_exponent_gap": 8,
+      "overlap_direct": "197633/147573952589676412928",
+      "lower_bound": "3/2251799813685248",
+      "upper_bound": "773/576460752303423488",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "radix": 4,
+      "weights": [
+        1,
+        4,
+        16
+      ],
+      "S": 21,
+      "r": "1/784637716923335095479473677900958302012794430558004314112",
+      "epsilon": "1/63",
+      "delta": "1/21",
+      "alpha_mass_exponents": [
+        45,
+        54,
+        90
+      ],
+      "beta_mass_exponents": [
+        81,
+        72,
+        36
+      ],
+      "count_vectors_checked": 10,
+      "balanced_weight": "2/9",
+      "minimum_nonbalanced_exponent_gap": 9,
+      "overlap_direct": "14535444052498685160849409/51222714931733090737134249496323252421235336576570085033006772522412515332559208448",
+      "lower_bound": "1/3530869726155007929657631550554312359057574937511019413504",
+      "upper_bound": "1031/3615610599582728119969414707767615855674956736011283879428096",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 2,
+      "k": 2,
+      "radix": 3,
+      "weights": [
+        1,
+        3
+      ],
+      "S": 4,
+      "r": "1/65536",
+      "epsilon": "1/8",
+      "delta": "1/4",
+      "alpha_mass_exponents": [
+        6,
+        10
+      ],
+      "beta_mass_exponents": [
+        10,
+        6
+      ],
+      "count_vectors_checked": 5,
+      "balanced_weight": "3/8",
+      "minimum_nonbalanced_exponent_gap": 4,
+      "overlap_direct": "833/8796093022208",
+      "lower_bound": "3/34359738368",
+      "upper_bound": "53/549755813888",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "radix": 2,
+      "weights": [
+        1,
+        2,
+        4
+      ],
+      "S": 7,
+      "r": "1/9223372036854775808",
+      "epsilon": "1/21",
+      "delta": "1/21",
+      "alpha_mass_exponents": [
+        17,
+        20,
+        26
+      ],
+      "beta_mass_exponents": [
+        25,
+        22,
+        16
+      ],
+      "count_vectors_checked": 10,
+      "balanced_weight": "2/9",
+      "minimum_nonbalanced_exponent_gap": 3,
+      "overlap_direct": "228745/8160249282398746929266688",
+      "lower_bound": "1/41505174165846491136",
+      "upper_bound": "23/664082786653543858176",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "radix": 3,
+      "weights": [
+        1,
+        3,
+        9
+      ],
+      "S": 13,
+      "r": "1/166153499473114484112975882535043072",
+      "epsilon": "1/39",
+      "delta": "2/39",
+      "alpha_mass_exponents": [
+        29,
+        35,
+        53
+      ],
+      "beta_mass_exponents": [
+        49,
+        43,
+        25
+      ],
+      "count_vectors_checked": 10,
+      "balanced_weight": "2/9",
+      "minimum_nonbalanced_exponent_gap": 6,
+      "overlap_direct": "2977974656569/2192252455996354377305527249074424529483898814464",
+      "lower_bound": "1/747690747629015178508391471407693824",
+      "upper_bound": "15/10633823966279326983230456482242756608",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "radix": 2,
+      "weights": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "S": 15,
+      "r": "1/1766847064778384329583297500742918515827483896875618958121606201292619776",
+      "epsilon": "1/60",
+      "delta": "1/60",
+      "alpha_mass_exponents": [
+        49,
+        53,
+        61,
+        77
+      ],
+      "beta_mass_exponents": [
+        71,
+        67,
+        59,
+        43
+      ],
+      "count_vectors_checked": 35,
+      "balanced_weight": "3/32",
+      "minimum_nonbalanced_exponent_gap": 4,
+      "overlap_direct": "7727300334844123545601/133499189745056880149688856635597007162669032647290798121690100488888732861290034376435130433536",
+      "lower_bound": "3/56539106072908298546665520023773392506479484700019806659891398441363832832",
+      "upper_bound": "77/904625697166532776746648320380374280103671755200316906558262375061821325312",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "radix": 3,
+      "weights": [
+        1,
+        3,
+        9
+      ],
+      "S": 13,
+      "r": "1/166153499473114484112975882535043072",
+      "epsilon": "1/39",
+      "delta": "2/39",
+      "alpha_mass_exponents": [
+        29,
+        35,
+        53
+      ],
+      "beta_mass_exponents": [
+        49,
+        43,
+        25
+      ],
+      "count_vectors_checked": 28,
+      "balanced_weight": "10/81",
+      "minimum_nonbalanced_exponent_gap": 6,
+      "overlap_direct": "197702347537930580708265529/43253737477398429168499189549933430320704766577722218591427592558399949447057971137964982260465664",
+      "lower_bound": "5/1118082908180071333564430449688878123297079653491602621936328924255485952",
+      "upper_bound": "79/15901623583005458966249677506686266642447355071880570623094455811633577984",
+      "count_formula_equals_direct_tensor": true,
+      "sandwich_passed": true
+    }
+  ],
+  "q_zero_schedule_checks": [
+    {
+      "n": 2,
+      "k": 2,
+      "counts": [
+        4,
+        0
+      ],
+      "q": "0",
+      "overlap_direct": "1/18446744073709551616",
+      "upper_bound": "1/72057594037927936",
+      "normalised_overlap": "1/65536",
+      "status": "passed"
+    }
+  ],
+  "status": "All listed checks passed"
+}

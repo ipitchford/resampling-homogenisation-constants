@@ -1,0 +1,59 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+jobs:
+  quick:
+    name: Manifest; exact checks under python -O compared with the shipped logs; negative controls (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned requirements
+        run: python3 -m pip install --disable-pip-version-check -r requirements.txt
+      - name: Run the exact checks under -O in a copy; run the negative controls
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: |
+          pkg="$RUNNER_TEMP/pkg"; n1="$RUNNER_TEMP/neg1"; n2="$RUNNER_TEMP/neg2"
+          for d in "$pkg" "$n1" "$n2"; do mkdir -p "$d/logs" "$d/figures"; cp -R code "$d/code"; done
+          test "$(grep -c 'Q(87, 400), Q(87, 80)' "$n1/code/check_boundary.py")" = 1
+          sed -i 's|Q(87, 400), Q(87, 80)|Q(88, 400), Q(87, 80)|' "$n1/code/check_boundary.py"
+          test "$(grep -c 'check(lower<=overlap_count<=upper)' "$n2/code/verify_unrestricted_asymptotic.py")" = 1
+          sed -i 's|check(lower<=overlap_count<=upper)|check(2*lower<=overlap_count<=upper)|' "$n2/code/verify_unrestricted_asymptotic.py"
+          cd "$pkg"
+          for s in verify check_boundary verify_unrestricted_asymptotic check_extensions; do python3 -I -B -O "code/$s.py"; done
+          for s in check_schedule check_two_active check_n3_reduction; do python3 -I -B -O "code/$s.py" > "logs/$s.stdout.json"; done
+          cd "$n1"; if python3 -I -B -O code/check_boundary.py; then echo "negative control 1 not detected"; exit 1; fi
+          cd "$n2"; if python3 -I -B -O code/verify_unrestricted_asymptotic.py; then echo "negative control 2 not detected"; exit 1; fi
+      - name: Compare with the shipped logs
+        run: |
+          python3 -I - "$RUNNER_TEMP/pkg/logs" logs <<'PY'
+          import json, math, sys
+          from pathlib import Path
+          new, old = Path(sys.argv[1]), Path(sys.argv[2])
+          for f in ["boundary.json", "unrestricted_asymptotic.json", "extensions.json", "check_schedule.stdout.json", "check_two_active.stdout.json", "check_n3_reduction.stdout.json"]:
+              if (new / f).read_text() != (old / f).read_text(): raise SystemExit(f"{f} differs from the shipped log")
+          skip = {"python", "numpy", "scipy", "sympy", "elapsed_seconds"}
+          def same(a, b):
+              if isinstance(a, dict) and isinstance(b, dict):
+                  return set(a) == set(b) and all(same(a[k], b[k]) for k in a)
+              if isinstance(a, list) and isinstance(b, list):
+                  return len(a) == len(b) and all(same(x, y) for x, y in zip(a, b))
+              if isinstance(a, float) and isinstance(b, float):
+                  return math.isclose(a, b, rel_tol=1e-9, abs_tol=1e-12)
+              return a == b
+          g, f = (json.loads((p / "verification.json").read_text()) for p in (new, old))
+          if g.get("status") != "All listed checks passed": raise SystemExit("verify.py did not pass")
+          if not same({k: v for k, v in g.items() if k not in skip}, {k: v for k, v in f.items() if k not in skip}):
+              raise SystemExit("verification.json differs from the shipped log beyond float tolerance")
+          print("PASS: seven exact-check logs agree with the shipped logs; both negative controls detected")
+          PY
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"

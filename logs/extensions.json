@@ -1,0 +1,161 @@
+{
+  "C_infinity": {
+    "bessel_formula": "1.5237776118026086987",
+    "poisson_series": "1.5237776118026086987",
+    "C_n_exact_selected": {
+      "2": "3/2",
+      "3": "14/9",
+      "4": "99/64",
+      "5": "964/625",
+      "10": "766573719/500000000",
+      "20": "801351289900139751844681/524288000000000000000000",
+      "40": "46123945630618243750157481138892411903365212783803391103293721/30223145490365729367654400000000000000000000000000000000000000"
+    },
+    "C_n_decimal_large_n": {
+      "100": "1.52471081461",
+      "400": "1.52401076171",
+      "1600": "1.52383588949"
+    },
+    "one_over_C_infinity": "0.656263743642"
+  },
+  "n2_identity": "1 - (3D/2 - D^2/2) = r(1+r)/2, r = 1-D",
+  "separation_checks": 72,
+  "delta_table": [
+    {
+      "n": 2,
+      "k": 1,
+      "delta_first_version_B=kn+1": "1/4",
+      "delta_B=k+1": "1/6",
+      "best_B_in_range": 3,
+      "delta_best": "1/4",
+      "symmetric_family_upper_bound_2k/(M-1)": "2",
+      "decimal": [
+        0.25,
+        0.16666666666666666,
+        0.25,
+        2.0
+      ]
+    },
+    {
+      "n": 3,
+      "k": 1,
+      "delta_first_version_B=kn+1": "1/21",
+      "delta_B=k+1": "1/21",
+      "best_B_in_range": 3,
+      "delta_best": "2/39",
+      "symmetric_family_upper_bound_2k/(M-1)": "1",
+      "decimal": [
+        0.047619047619047616,
+        0.047619047619047616,
+        0.05128205128205128,
+        1.0
+      ]
+    },
+    {
+      "n": 4,
+      "k": 1,
+      "delta_first_version_B=kn+1": "1/156",
+      "delta_B=k+1": "1/60",
+      "best_B_in_range": 2,
+      "delta_best": "1/60",
+      "symmetric_family_upper_bound_2k/(M-1)": "2/5",
+      "decimal": [
+        0.00641025641025641,
+        0.016666666666666666,
+        0.016666666666666666,
+        0.4
+      ]
+    },
+    {
+      "n": 5,
+      "k": 1,
+      "delta_first_version_B=kn+1": "1/1555",
+      "delta_B=k+1": "1/155",
+      "best_B_in_range": 2,
+      "delta_best": "1/155",
+      "symmetric_family_upper_bound_2k/(M-1)": "2/9",
+      "decimal": [
+        0.0006430868167202572,
+        0.0064516129032258064,
+        0.0064516129032258064,
+        0.2222222222222222
+      ]
+    },
+    {
+      "n": 6,
+      "k": 1,
+      "delta_first_version_B=kn+1": "1/19608",
+      "delta_B=k+1": "1/378",
+      "best_B_in_range": 2,
+      "delta_best": "1/378",
+      "symmetric_family_upper_bound_2k/(M-1)": "2/19",
+      "decimal": [
+        5.0999592003263974e-05,
+        0.0026455026455026454,
+        0.0026455026455026454,
+        0.10526315789473684
+      ]
+    },
+    {
+      "n": 3,
+      "k": 2,
+      "delta_first_version_B=kn+1": "2/57",
+      "delta_B=k+1": "2/39",
+      "best_B_in_range": 3,
+      "delta_best": "2/39",
+      "symmetric_family_upper_bound_2k/(M-1)": "2/3",
+      "decimal": [
+        0.03508771929824561,
+        0.05128205128205128,
+        0.05128205128205128,
+        0.6666666666666666
+      ]
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "delta_first_version_B=kn+1": "1/410",
+      "delta_B=k+1": "1/80",
+      "best_B_in_range": 3,
+      "delta_best": "1/80",
+      "symmetric_family_upper_bound_2k/(M-1)": "2/9",
+      "decimal": [
+        0.0024390243902439024,
+        0.0125,
+        0.0125,
+        0.2222222222222222
+      ]
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "delta_first_version_B=kn+1": "3/69905",
+      "delta_B=k+1": "3/1705",
+      "best_B_in_range": 4,
+      "delta_best": "3/1705",
+      "symmetric_family_upper_bound_2k/(M-1)": "3/77",
+      "decimal": [
+        4.291538516558186e-05,
+        0.0017595307917888563,
+        0.0017595307917888563,
+        0.03896103896103896
+      ]
+    }
+  ],
+  "three_component_next_order": {
+    "predicted_coefficient": "0.140344126529",
+    "observed_at_r=1e-10,1e-20,1e-40": [
+      "0.151377829528",
+      "0.140809293691",
+      "0.140345102478"
+    ]
+  },
+  "balanced_coefficients_k1": {
+    "2": "1/2",
+    "3": "2/9",
+    "4": "3/32",
+    "5": "24/625",
+    "6": "5/324"
+  },
+  "status": "All listed checks passed"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "One exact rational finite-product example; no universal bound inferred.",
+  "original": {
+    "D": "1/5",
+    "H": "87/400",
+    "H_over_D": "87/80"
+  },
+  "common_part_refinement": {
+    "D": "7/25",
+    "H": "111/400",
+    "H_over_D": "111/112"
+  }
+}

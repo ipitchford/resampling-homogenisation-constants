@@ -1,0 +1,69 @@
+{
+ "title": "Resampling heterogeneous experiments: sharp amplification constants and high-signal error asymptotics",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> In one sentence: resampling a set of different experiments (n draws with replacement instead of one look at each) can make a test between two hypotheses more informative than looking once at each, and this paper finds exact worst-case factors: in a natural class of experiments the advantage over guessing can grow by at most 14/9 (at three experiments), and in general the best universal homogenisation constant is at most 9/14, below the previously best bound 8/9.</p><p><strong>Context.</strong> Suppose a decision between two explanations uses n different sources of evidence. Design A looks at every source once. Design B makes n random draws with replacement, as a bootstrap or a random-design study does, so some sources are seen twice and some not at all. One would expect B to be worse, but it can be slightly better. Kontorovich (arXiv preprints, 2026) proved that B is never more than a constant factor better in total variation, the quantity that sets the best possible error rate of a test: D &ge; cH with c &gt; 0.1489, where D and H are the total-variation distances under the two designs. The best upper bound was c &le; 8/9, conjectured optimal for Bernoulli (yes/no) data.</p><p><strong>Results.</strong> (1) For experiments on general outcome spaces c &le; 9/14 (about 0.643); two sources already give 2/3. So 8/9 is not the general optimum; the Bernoulli conjecture is not addressed. (2) For erasure experiments (each observation either rules one hypothesis out or lands in a shared region whose internal distribution is the same under both hypotheses) the exact worst-case amplification sup H/D is found for every resampling schedule chosen independently of the data; it depends only on how often pairs of sources are drawn. For uniform resampling it is largest at three sources, with value 14/9, and decreases to 1 + e<sup>&minus;2</sup>(I<sub>0</sub>(2) + I<sub>1</sub>(2)) &asymp; 1.524 for many sources. (3) With two sources the problem is solved exactly for all experiments, and the exact bound is given at every distance when only two experiments differ; the exact optimum for three erasure experiments is also found. (4) For arbitrary experiments, resampling with n draws always leaves an overlap 1 &minus; H (twice the Bayes error) of at least n!/n<sup>n</sup> times the fixed-design overlap (2/9 for three sources), and when the evidence is already strong this factor is attained to leading order; a version with kn draws is also proved.</p><p><strong>Limits.</strong> Whether 9/14 is the exact general constant is open: it is conjectured, and a numerical search found nothing larger, but that is not a proof. The erasure-class results are not known to bound general experiments. The high-signal limit can be approached slowly. The Bernoulli conjecture 8/9 is not addressed. The factor 14/9 multiplies the advantage over guessing (the total-variation distance), not accuracy.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF); nine Python scripts (exact rational and symbolic checks, the occupancy constants, the two-coordinate modulus, the three-component reduction, the high-signal construction and its radix family, a bounded-search script for the conjecture, and the figure script) with their recorded outputs; the figure; the bibliography from registry records; a machine-readable index; a research-gate record; a review summary; a replay receipt and SHA-256 sums.</p><p><strong>Assurance.</strong> Written proofs; exact computations check the stated constants, identities and finite constructions, and a fixed-seed numerical search supports the conjecture without proving it. Internal AI-assisted review only (five reviewer roles, an adversarial review and an audit of new proofs by a second AI model, clean replays, one revision round, a re-review and a proof audit): not peer review, independent reproduction or formal verification. The homogenisation problem, the bounds c &gt; 0.1489 and c &le; 8/9 and the labelled-lift argument are due to Kontorovich. Creator: Anonymous. Text and data CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-16",
+ "keywords": [
+  "total variation",
+  "homogenisation",
+  "resampling",
+  "bootstrap",
+  "hypothesis testing",
+  "comparison of experiments",
+  "privacy amplification by subsampling",
+  "erasure experiments",
+  "Bayes error"
+ ],
+ "notes": "Subtitle: In a natural class, resampling raises a test's advantage by at most 14/9; in general the homogenisation constant is at most 9/14. Code (code/*.py and the CI workflows) is MIT; prose, manuscript, figure and data are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/resampling-homogenisation-constants/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/resampling-homogenisation-constants/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1017/s1446788700029785",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1214/25-ecp680",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:1807.01647",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2601.04079",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2604.03882",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2610.31164",
+   "relation": "references",
+   "scheme": "arxiv"
+  }
+ ]
+}
